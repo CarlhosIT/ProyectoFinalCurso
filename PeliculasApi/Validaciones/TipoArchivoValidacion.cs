@@ -19,7 +19,7 @@ namespace PeliculasApi.Validaciones
         {
             if (grupoArchivo == GrupoTipoEnum.Imagen) 
             {
-                formatoArchivo = new String[] { "imagen/jpg", "imagen/png","imagen/gif"};
+                formatoArchivo = new String[] { "image/jpg", "image/png","image/gif"};
             }
         }
 

@@ -14,8 +14,8 @@ namespace PeliculasApi.Entidades
         [StringLength(50)]
         public String Nombre { get; set; }
         public DateTime FechaNacimiento { get; set; }
-        [PesoIArchivoValidacion(PesoMaximo: 4)]
-        [TipoArchivoValidacion(GrupoTipoEnum.Imagen)]
         public String Imagen { get; set; }
+
+        public List<PeliculasActor> PeliculasActores { get; set; }
     }
 }

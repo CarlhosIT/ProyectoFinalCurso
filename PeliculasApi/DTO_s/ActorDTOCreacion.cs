@@ -8,14 +8,10 @@ using System.Threading.Tasks;
 
 namespace PeliculasApi.DTO_s
 {
-    public class ActorDTOCreacion
+    public class ActorDTOCreacion: ActorPatchDTO
     {
-        [Required]
-        [StringLength(50)]
-        public String Nombre { get; set; }
-        public DateTime FechaNacimiento { get; set; }
-        [PesoIArchivoValidacion(PesoMaximo:4)]
-        [TipoArchivoValidacion(GrupoTipoEnum.Imagen)]
+        [PesoIArchivoValidacion(PesoMaximo: 4)]
+        //[TipoArchivoValidacion(GrupoTipoEnum.Imagen)]
         public IFormFile Imagen { get; set; }
     }
 }
